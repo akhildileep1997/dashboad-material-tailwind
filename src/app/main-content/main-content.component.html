@@ -1,0 +1,55 @@
+<!------card-->
+<div class="cards flex flex-row justify-evenly mb-10 bg-white">
+    <mat-card class="w-56 mt-14 ">
+       <app-card class="ps-5 bg-red-300 shadow-2xl"
+       bg="orange"
+       icon="medication"
+       content="Doctors"
+       total="250"
+       ></app-card>
+    </mat-card>
+
+    <mat-card class="w-56 mt-14">
+        <app-card class="ps-5 bg-orange-200 shadow-2xl"
+        bg="orange"
+        icon="people"
+        content="Patients"
+        total="3550"
+        ></app-card>
+
+    </mat-card>
+
+    <mat-card class="w-56 mt-14">
+        <app-card class="ps-5 bg-gray-400 shadow-2xl"
+        bg="orange"
+        icon="badge"
+        content="Staffs"
+        total="400"
+        ></app-card>
+
+    </mat-card>
+
+</div>
+<!------area chart-->
+<div class="highChart">
+    <div>
+        <app-high-chart></app-high-chart>
+    </div>
+</div>
+
+<!----table and pie Chart-->
+<div class="content flex flex-row justify-center">
+    <div class="pieChart w-full">
+        <app-pie-chart></app-pie-chart>
+    </div>
+
+    <div class="table w-full my-3 mx-3">
+        <app-doctor-table></app-doctor-table>
+    </div>
+</div>
+<!---patient table-->
+<mat-divider></mat-divider>
+<div class="my-3 mx-3">
+    <p class="text-center text-lg font-bold">Patients List</p>
+    <app-patient-table></app-patient-table>
+</div>
